@@ -6,7 +6,7 @@ A command-center demo for cleaning up a messy workflow or dashboard without usin
 
 - Fox & Hen offer: Fixed 48-hour workflow/dashboard cleanup
 - Upwork catalog proof point: Workflow repair command center
-- Live demo: Pending Vercel deployment at `https://foxhen-workflow-dashboard-cleanup.vercel.app`
+- Live demo: https://foxhen-workflow-dashboard-cleanup.vercel.app
 - Repository: https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup
 
 ## Screenshot
