@@ -1,23 +1,32 @@
 # Workflow Dashboard Cleanup
 
-A command-center demo for cleaning up a messy workflow or dashboard without using real customer data.
+A public-safe mini product that demonstrates how Fox & Hen can turn a messy workflow or dashboard into a clear 48-hour command center.
+
+The app is intentionally fictional: static TypeScript data, no backend, no auth, no forms, no environment variables, no real names, and no production systems.
+
+## Demo Narrative
+
+This sample models a fixed-scope workflow cleanup engagement. A buyer can switch between three common scenarios, inspect priority-scored issues, compare before/after dashboard language, and review whether the handoff package is ready.
+
+## Key Interactions To Test
+
+- Switch scenarios: `Launch readiness`, `Ops reset`, and `Handoff sprint` each change the metrics, active issues, recommended fix, and export preview.
+- Filter the issue queue by status to see stuck, active, watching, and ready workflow items.
+- Toggle the issue queue between `Before` and `After` to compare messy-state language with the repaired operating view.
+- Select individual issues to inspect severity, effort, confidence, owner role, lane, and service mapping.
+- Review the acceptance checklist to see how active issue data drives handoff readiness.
+- Click `Simulate handoff copy` to test the temporary copied state without writing to a clipboard or calling an API.
 
 ## Service Mapping
 
 - Fox & Hen offer: Fixed 48-hour workflow/dashboard cleanup
-- Upwork catalog proof point: Workflow repair command center
+- Demo surface: Workflow repair command center
 - Live demo: https://foxhen-workflow-dashboard-cleanup.vercel.app
 - Repository: https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup
 
 ## Screenshot
 
 ![Workflow Dashboard Cleanup demo screenshot](docs/demo-screenshot.png)
-
-## What This Demonstrates
-
-- A polished React/Vite/TypeScript interface for a small fixed-scope service.
-- A clear intake-to-handoff workflow using fictional sample data.
-- Public-safe portfolio proof for Fox & Hen, LLC without real customer data, credentials, or production access.
 
 ## Local Run
 
@@ -34,4 +43,4 @@ npm run build
 
 ## Scope Note
 
-This repository is a public sample app. It uses local static data only and does not require environment variables, accounts, payments, databases, or third-party services.
+This repository uses React, TypeScript, Vite, Tailwind, and local static data only. It does not require accounts, payments, databases, third-party services, credentials, or sensitive operational data.
