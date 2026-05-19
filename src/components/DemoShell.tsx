@@ -96,7 +96,7 @@ export function DemoShell({ demo }: DemoShellProps) {
             <a className="rounded-full px-3 py-2 transition hover:bg-white/10 hover:text-white" href="#handoff">
               Handoff
             </a>
-            <a className="rounded-full border border-white/10 px-3 py-2 transition hover:border-amber-200/40 hover:text-amber-100" href={demo.repo}>
+            <a className="rounded-full border border-white/15 bg-white/8 px-3 py-2 font-black !text-white transition hover:border-amber-200/40 hover:bg-white/12 hover:text-amber-100" href={demo.repo}>
               Repository
             </a>
           </div>
