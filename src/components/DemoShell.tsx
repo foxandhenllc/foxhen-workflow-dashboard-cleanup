@@ -60,6 +60,9 @@ export function DemoShell({ demo }: DemoShellProps) {
   const readiness = Math.round((passedRequiredChecks.length / requiredChecks.length) * 100);
   const avgPriority = Math.round(scenarioIssues.reduce((sum, issue) => sum + priorityScore(issue), 0) / scenarioIssues.length);
   const ownerMap = new Map(demo.roles.map((role) => [role.id, role]));
+  const selectedCheckLabels = demo.checks
+    .filter((check) => selectedIssue.acceptanceCheckIds.includes(check.id))
+    .map((check) => check.label);
 
   function selectScenario(nextScenarioId: string) {
     const nextScenario = demo.scenarios.find((item) => item.id === nextScenarioId) ?? demo.scenarios[0];
@@ -237,7 +240,7 @@ export function DemoShell({ demo }: DemoShellProps) {
                 </div>
 
                 <div className="grid gap-3">
-                  {filteredIssues.map((issue) => {
+                  {filteredIssues.length > 0 ? filteredIssues.map((issue) => {
                     const role = ownerMap.get(issue.roleId);
                     const score = priorityScore(issue);
 
@@ -273,7 +276,12 @@ export function DemoShell({ demo }: DemoShellProps) {
                         </p>
                       </button>
                     );
-                  })}
+                  }) : (
+                    <div className="rounded-3xl border border-dashed border-white/15 bg-black/15 p-8 text-center">
+                      <p className="font-black text-white">No issues match this filter.</p>
+                      <p className="mt-2 text-sm leading-6 text-stone-400">Switch status filters to keep inspecting the fictional workflow queue.</p>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -295,6 +303,17 @@ export function DemoShell({ demo }: DemoShellProps) {
                       <p className="text-xs text-stone-500">Confidence</p>
                       <p className="mt-1 text-2xl font-black">{selectedIssue.confidence}%</p>
                     </div>
+                  </div>
+                  <div className="mt-5 rounded-3xl border border-amber-200/20 bg-amber-200/10 p-4">
+                    <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-100">Handoff proof</p>
+                    <ul className="mt-3 grid gap-2">
+                      {selectedCheckLabels.map((label) => (
+                        <li key={label} className="flex gap-2 text-sm leading-5 text-stone-200">
+                          <span className="text-amber-200">•</span>
+                          <span>{label}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
@@ -391,6 +410,11 @@ export function DemoShell({ demo }: DemoShellProps) {
           </div>
         </div>
       </section>
+      {copied && (
+        <div className="fixed bottom-5 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-200/30 bg-stone-950 px-5 py-3 text-sm font-black text-amber-100 shadow-2xl shadow-black/40">
+          Simulated handoff copy staged locally
+        </div>
+      )}
     </main>
   );
 }

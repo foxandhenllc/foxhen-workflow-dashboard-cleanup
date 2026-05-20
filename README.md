@@ -24,6 +24,12 @@ This sample models a fixed-scope workflow cleanup engagement. A buyer can switch
 - Live demo: https://foxhen-workflow-dashboard-cleanup.vercel.app
 - Repository: https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup
 
+| Service moment | Demo artifact | Buyer takeaway |
+| --- | --- | --- |
+| Diagnose | Scenario switcher, status filters, and priority scores | Shows how messy queues become an ordered repair plan. |
+| Repair | Before/after issue language, lane counts, and role load | Makes ownership, status, and next action visible. |
+| Handoff | Acceptance checks, handoff proof, and simulated copy state | Demonstrates a reviewable package without using real operations data. |
+
 ## Screenshot
 
 ![Workflow Dashboard Cleanup demo screenshot](docs/demo-screenshot.png)
@@ -44,3 +50,10 @@ npm run build
 ## Scope Note
 
 This repository uses React, TypeScript, Vite, Tailwind, and local static data only. It does not require accounts, payments, databases, third-party services, credentials, or sensitive operational data.
+
+## Forking Notes
+
+- Replace only `src/data/sample.ts` to adapt the template; keep examples fictional or fully anonymized.
+- Update `repo`, `liveUrl`, scenario names, issue titles, and acceptance checks before publishing a fork.
+- Do not add real client trackers, screenshots, API keys, analytics, auth, forms, or external workflow integrations.
+- Keep the simulated copy action local unless you intentionally add a reviewed clipboard implementation.
