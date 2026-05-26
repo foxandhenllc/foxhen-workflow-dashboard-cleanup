@@ -38,6 +38,21 @@ This sample models a fixed-scope workflow cleanup engagement. A buyer can switch
 
 ![Workflow Dashboard Cleanup demo screenshot](docs/demo-screenshot.png)
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo when a team needs a static command center for triaging messy workflow items, comparing before/after states, and exporting a clear handoff report.
+
+**Who it helps:** small businesses, agencies, and operators with messy dashboards or delivery queues.
+
+**Search intents covered:**
+
+- workflow dashboard cleanup tool
+- client handoff dashboard template
+- small business operations dashboard
+- 48 hour workflow cleanup
+
+**Why this repo is useful:** It demonstrates intake triage, issue prioritization, status filtering, acceptance checks, and a buyer-readable handoff without needing a backend or private data.
+
 ## Local Run
 
 ```bash

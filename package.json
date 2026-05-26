@@ -24,13 +24,23 @@
   },
   "homepage": "https://foxhen-workflow-dashboard-cleanup.vercel.app",
   "keywords": [
-    "workflow",
-    "dashboard",
+    "business",
+    "cleanup",
+    "client",
     "client-handoff",
+    "dashboard",
+    "fox-and-hen",
+    "handoff",
+    "hour",
+    "operations",
     "react",
+    "small",
+    "small-business",
+    "template",
+    "tool",
     "typescript",
     "vite",
-    "small-business",
-    "fox-and-hen"
+    "workflow",
+    "workflow-tools"
   ]
 }
