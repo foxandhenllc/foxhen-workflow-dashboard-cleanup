@@ -1,5 +1,9 @@
 # Workflow Dashboard Cleanup
 
+## Purpose
+
+Workflow cleanup command center for intake triage, issue states, before/after cleanup, and client handoff reports.
+
 A public-safe mini product that demonstrates how Fox & Hen can turn a messy workflow or dashboard into a clear 48-hour command center.
 
 The app is intentionally fictional: static TypeScript data, no backend, no auth, no forms, no environment variables, no real names, and no production systems.

@@ -2,7 +2,7 @@
   "name": "foxhen-workflow-dashboard-cleanup",
   "version": "1.0.0",
   "type": "module",
-  "description": "Workflow Dashboard Cleanup public sample app for Fox & Hen, LLC",
+  "description": "Workflow cleanup command center for intake triage, issue states, before/after cleanup, and client handoff reports.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -21,5 +21,16 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3"
-  }
+  },
+  "homepage": "https://foxhen-workflow-dashboard-cleanup.vercel.app",
+  "keywords": [
+    "workflow",
+    "dashboard",
+    "client-handoff",
+    "react",
+    "typescript",
+    "vite",
+    "small-business",
+    "fox-and-hen"
+  ]
 }
