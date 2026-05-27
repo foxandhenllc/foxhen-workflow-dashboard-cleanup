@@ -25,7 +25,7 @@ This sample models a fixed-scope workflow cleanup engagement. A buyer can switch
 
 - Fox & Hen offer: Fixed 48-hour workflow/dashboard cleanup
 - Demo surface: Workflow repair command center
-- Live demo: https://foxhen-workflow-dashboard-cleanup.vercel.app
+- Live demo: https://freetoolsforpeople.com/workflow-dashboard-cleanup
 - Repository: https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup
 
 | Service moment | Demo artifact | Buyer takeaway |

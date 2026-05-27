@@ -81,7 +81,7 @@ export const demo: DemoData = {
   tagline:
     'Switch scenarios, triage invented issues, compare the repaired dashboard state, and package a handoff note without a backend or sensitive data.',
   repo: 'https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup',
-  liveUrl: 'https://foxhen-workflow-dashboard-cleanup.vercel.app',
+  liveUrl: 'https://freetoolsforpeople.com/workflow-dashboard-cleanup',
   accent: '#f6b35b',
   lanes: {
     intake: 'Intake',
