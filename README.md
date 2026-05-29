@@ -1,5 +1,7 @@
 # Workflow Dashboard Cleanup
 
+[![Build](https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup/actions/workflows/build.yml/badge.svg)](https://github.com/foxandhenllc/foxhen-workflow-dashboard-cleanup/actions/workflows/build.yml)
+
 ## Purpose
 
 Workflow cleanup command center for intake triage, issue states, before/after cleanup, and client handoff reports.
@@ -53,6 +55,13 @@ This sample models a fixed-scope workflow cleanup engagement. A buyer can switch
 
 **Why this repo is useful:** It demonstrates intake triage, issue prioritization, status filtering, acceptance checks, and a buyer-readable handoff without needing a backend or private data.
 
+## Open Source Readiness
+
+- MIT licensed for reuse, remixing, and client-safe adaptation.
+- GitHub Actions build workflow runs install, typecheck, tests when present, and production build.
+- Contribution guide, roadmap, and issue templates are included for public collaboration.
+- Public-safe data policy keeps examples fictional and reviewable.
+
 ## Local Run
 
 ```bash
@@ -76,3 +85,19 @@ This repository uses React, TypeScript, Vite, Tailwind, and local static data on
 - Update `repo`, `liveUrl`, scenario names, issue titles, and acceptance checks before publishing a fork.
 - Do not add real client trackers, screenshots, API keys, analytics, auth, forms, or external workflow integrations.
 - Keep the simulated copy action local unless you intentionally add a reviewed clipboard implementation.
+
+## Validation
+
+```bash
+npm run typecheck --if-present
+npm run test --if-present
+npm run build --if-present
+```
+
+## Contributing
+
+See `CONTRIBUTING.md` for public-safe contribution rules, local validation commands, and good first contribution ideas. Roadmap items live in `ROADMAP.md`.
+
+## License
+
+MIT - see `LICENSE`.
